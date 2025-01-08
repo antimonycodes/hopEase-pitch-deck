@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-section {
+  @apply min-h-screen w-screen flex items-center justify-center fixed top-0 left-0;
+}
