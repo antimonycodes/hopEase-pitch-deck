@@ -48,15 +48,15 @@ function Content() {
     return () => clearTimeout(timer);
   }, [currentSection, navigate]);
 
-  const nextSection = () => {
-    const nextIndex = (currentSection + 1) % sections.length;
-    navigate(`/${sections[nextIndex].toLowerCase()}`);
-  };
+  // const nextSection = () => {
+  //   const nextIndex = (currentSection + 1) % sections.length;
+  //   navigate(`/${sections[nextIndex].toLowerCase()}`);
+  // };
 
-  const prevSection = () => {
-    const prevIndex = (currentSection - 1 + sections.length) % sections.length;
-    navigate(`/${sections[prevIndex].toLowerCase()}`);
-  };
+  // const prevSection = () => {
+  //   const prevIndex = (currentSection - 1 + sections.length) % sections.length;
+  //   navigate(`/${sections[prevIndex].toLowerCase()}`);
+  // };
 
   return (
     <div className="h-screen w-screen overflow-hidden bg-gray-100">
