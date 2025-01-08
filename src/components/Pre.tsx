@@ -17,13 +17,13 @@ const Pre = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center max-w-4xl relative px-8"
+        className="text-center max-w-4xl relative px-8 bgb"
       >
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-7xl font-bold mb-8  text-emerald-500 "
+          className="text-7xl font-bold mb-8  text-blue-500 "
         >
           hospEase Healthcare Management System
         </motion.h1>
@@ -31,7 +31,7 @@ const Pre = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="text-3xl text-emerald-500 mb-8"
+          className="text-3xl text-blue-500 mb-8"
         >
           Revolutionizing Healthcare in Nigeria
         </motion.p>

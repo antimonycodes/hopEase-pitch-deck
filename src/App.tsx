@@ -89,7 +89,7 @@ function Content() {
           </Routes>
         </motion.div>
       </AnimatePresence>
-      <div className="absolute bottom-5 right-5 flex space-x-4">
+      {/* <div className="absolute bottom-5 right-5 flex space-x-4">
         <button
           onClick={prevSection}
           className="px-4 py-2 bg-blue-500 text-white rounded-md"
@@ -102,7 +102,7 @@ function Content() {
         >
           Next
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

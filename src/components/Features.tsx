@@ -64,7 +64,7 @@ export default function Features() {
 
   return (
     <motion.div
-      className="h-full w-full flex items-center justify-center bg-gradient-to-br from-purple-400 to-pink-500 text-white p-8"
+      className="h-full w-full flex items-center justify-center bg-gradient-to-br from-purple-400 to-pink-500 text-white p-2"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -84,7 +84,7 @@ export default function Features() {
           {displayedFeatures.map((feature) => (
             <motion.div
               key={feature.title}
-              className="bg-white bg-opacity-20 p-6 rounded-lg flex flex-col items-center"
+              className="bg-white bg-opacity-20 p-2 rounded-lg flex flex-col items-center"
               variants={itemVariants}
             >
               <div className="w-[600px] h-[400px] mb-4">
