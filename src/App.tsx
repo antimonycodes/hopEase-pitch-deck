@@ -39,14 +39,14 @@ function Content() {
     setCurrentSection(sectionIndex !== -1 ? sectionIndex : 0);
   }, [location]);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     const nextSection = (currentSection + 1) % sections.length;
-  //     navigate(`/${sections[nextSection].toLowerCase()}`);
-  //   }, 12000);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const nextSection = (currentSection + 1) % sections.length;
+      navigate(`/${sections[nextSection].toLowerCase()}`);
+    }, 12000);
 
-  //   return () => clearTimeout(timer);
-  // }, [currentSection, navigate]);
+    return () => clearTimeout(timer);
+  }, [currentSection, navigate]);
 
   const nextSection = () => {
     const nextIndex = (currentSection + 1) % sections.length;

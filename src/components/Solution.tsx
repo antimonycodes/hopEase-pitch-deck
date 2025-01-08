@@ -59,7 +59,10 @@ export default function Solution() {
       setShowSectionTwos(true);
     }, 5000); // 5000 ms (5 seconds)
 
-    return () => clearTimeout(timer); // Clear the timer on cleanup
+    return () => {
+      clearTimeout(timer);
+      setShowSectionTwos(false);
+    };
   }, []);
 
   const data = [
