@@ -39,24 +39,24 @@ function Content() {
     setCurrentSection(sectionIndex !== -1 ? sectionIndex : 0);
   }, [location]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const nextSection = (currentSection + 1) % sections.length;
-      navigate(`/${sections[nextSection].toLowerCase()}`);
-    }, 12000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     const nextSection = (currentSection + 1) % sections.length;
+  //     navigate(`/${sections[nextSection].toLowerCase()}`);
+  //   }, 12000);
 
-    return () => clearTimeout(timer);
-  }, [currentSection, navigate]);
+  //   return () => clearTimeout(timer);
+  // }, [currentSection, navigate]);
 
-  // const nextSection = () => {
-  //   const nextIndex = (currentSection + 1) % sections.length;
-  //   navigate(`/${sections[nextIndex].toLowerCase()}`);
-  // };
+  const nextSection = () => {
+    const nextIndex = (currentSection + 1) % sections.length;
+    navigate(`/${sections[nextIndex].toLowerCase()}`);
+  };
 
-  // const prevSection = () => {
-  //   const prevIndex = (currentSection - 1 + sections.length) % sections.length;
-  //   navigate(`/${sections[prevIndex].toLowerCase()}`);
-  // };
+  const prevSection = () => {
+    const prevIndex = (currentSection - 1 + sections.length) % sections.length;
+    navigate(`/${sections[prevIndex].toLowerCase()}`);
+  };
 
   return (
     <div className="h-screen w-screen overflow-hidden bg-gray-100">
@@ -89,7 +89,7 @@ function Content() {
           </Routes>
         </motion.div>
       </AnimatePresence>
-      {/* <div className="absolute bottom-5 right-5 flex space-x-4">
+      <div className="absolute bottom-5 right-5 flex space-x-4">
         <button
           onClick={prevSection}
           className="px-4 py-2 bg-blue-500 text-white rounded-md"
@@ -102,7 +102,7 @@ function Content() {
         >
           Next
         </button>
-      </div> */}
+      </div>
     </div>
   );
 }
