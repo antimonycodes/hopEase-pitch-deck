@@ -55,7 +55,7 @@ const Video = () => {
       >
         <h1 className="absolute top-8 text-white text-2xl text-center">
           A viral video of a hospital staff caught stealing drugs from the
-          hospital <br /> and selling them at his wife’s shop.
+          hospital <br /> and selling them at his wife’s shop..
         </h1>
         <motion.div
           className="relative w-4/5 max-w-3xl aspect-video bg-black overflow-hidden rounded-lg shadow-lg"
