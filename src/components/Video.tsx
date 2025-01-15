@@ -54,7 +54,7 @@ const Video = () => {
         transition={{ duration: 0.5 }}
       >
         <h1 className="absolute top-8 text-white text-2xl text-center">
-          A viral video of a hospital staff caught stealing drugs from the
+          A viral video of a hospital staff caught stealing drugss from the
           hospital <br /> and selling them at his wife’s shop..
         </h1>
         <motion.div
